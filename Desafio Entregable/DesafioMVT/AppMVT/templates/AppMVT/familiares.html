@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h1 style="background-color:white">Mi familia! </h1>
+
+    {% for familiar in listita %}
+    <ul>
+        <li>
+            <h2 style="background-color:beige">{{ familiar.nombre }}</h2>
+            <h2 style="background-color:orange">{{ familiar.parentesco }}</h2>
+            <h2 style="background-color:brown">{{ familiar.dni }}</h2>
+            <h2 style="background-color:antiquewhite">{{ familiar.nacimiento }}</h2>
+        </li>
+    </ul>
+
+    {% endfor %}
+</body>
+
+</html>
